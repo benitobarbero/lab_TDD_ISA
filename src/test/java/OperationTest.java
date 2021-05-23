@@ -28,7 +28,10 @@ public class OperationTest {
     }
 
     @Test
-    public void testDivision(){ 
+    public void testDivision(){
+        assertEquals(10, operations.division(2, 20));
+        assertEquals(-2, operations.division(2, -4));
+        assertEquals(50, operations.division(10, 500));
 
     }
 
