@@ -19,8 +19,7 @@ public class Operations {
 
     public static double raiz(long numCalcularRaiz) {
         long raizAproximada = calculoRaizAproximada(numCalcularRaiz);
-        double result = bakhshali(numCalcularRaiz,raizAproximada);
-        return result;
+        return bakhshali(numCalcularRaiz,raizAproximada);
     }
 
     private static long calculoRaizAproximada(long numCalcularRaiz) {
@@ -34,9 +33,8 @@ public class Operations {
     }
 
     private static double bakhshali(long numCalcularRaiz, long raizAprox) {
-        double result = ((elevar(raizAprox, 4)) + (6 * elevar(raizAprox, 2) * numCalcularRaiz) + (elevar(numCalcularRaiz, 2))) /
+        return ((elevar(raizAprox, 4)) + (6 * elevar(raizAprox, 2) * numCalcularRaiz) + (elevar(numCalcularRaiz, 2))) /
                 ((4 * elevar(raizAprox, 3)) + (4 * raizAprox * numCalcularRaiz));
-        return result;
     }
 
     private static long elevar(long base, long exponente) {
