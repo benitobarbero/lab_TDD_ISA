@@ -14,7 +14,9 @@ public class OperationTest {
 
     @Test
     public void testResta(){
-
+        assertEquals(5, operations.resta(10,5));
+        assertEquals(-100, operations.resta(100, 200));
+        assertEquals(-1000, operations.resta(-500, 500));
     }
 
     @Test
