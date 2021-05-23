@@ -10,7 +10,7 @@ public class Operations {
     }
 
     public long multiplicacion(long a, long b){
-        return 0;
+        return a*b;
     }
 
     public double division(long a, long b){
