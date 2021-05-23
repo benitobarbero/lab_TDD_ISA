@@ -38,7 +38,7 @@ public class OperationTest {
     @Test
     public void testRaiz(){
         assertEquals(3, operations.raiz(2, 9));
-        
+
 
     }
 }
