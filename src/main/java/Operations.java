@@ -1,29 +1,29 @@
 public class Operations {
 
-    public long suma(long a, long b) {
+    public static long suma(long a, long b) {
         return a + b;
     }
 
 
-    public long resta(long a, long b) {
+    public static long resta(long a, long b) {
         return a - b;
     }
 
-    public long multiplicacion(long a, long b) {
+    public static long multiplicacion(long a, long b) {
         return a * b;
     }
 
-    public double division(long divisor, long dividendo) {
+    public static double division(long divisor, long dividendo) {
         return dividendo / divisor;
     }
 
-    public double raiz(long numCalcularRaiz) {
+    public static double raiz(long numCalcularRaiz) {
         long raizAproximada = calculoRaizAproximada(numCalcularRaiz);
         double result = bakhshali(numCalcularRaiz,raizAproximada);
         return result;
     }
 
-    private long calculoRaizAproximada(long numCalcularRaiz) {
+    private static long calculoRaizAproximada(long numCalcularRaiz) {
         long raizAprox = 1;
         long cuadrado = elevar(raizAprox, 2);
         while (cuadrado < numCalcularRaiz) {
@@ -33,13 +33,13 @@ public class Operations {
         return raizAprox;
     }
 
-    private double bakhshali(long numCalcularRaiz, long raizAprox) {
+    private static double bakhshali(long numCalcularRaiz, long raizAprox) {
         double result = ((elevar(raizAprox, 4)) + (6 * elevar(raizAprox, 2) * numCalcularRaiz) + (elevar(numCalcularRaiz, 2))) /
                 ((4 * elevar(raizAprox, 3)) + (4 * raizAprox * numCalcularRaiz));
         return result;
     }
 
-    private long elevar(long base, long exponente) {
+    private static long elevar(long base, long exponente) {
         long result = base;
         while (exponente > 1) {
             result = result * base;
