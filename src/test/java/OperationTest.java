@@ -21,11 +21,14 @@ public class OperationTest {
 
     @Test
     public void testMultiplicacion(){
+        assertEquals(10, operations.multiplicacion(2,5));
+        assertEquals(100, operations.multiplicacion(10,10));
+        assertEquals(-1000, operations.multiplicacion(-2, 500));
 
     }
 
     @Test
-    public void testDivision(){
+    public void testDivision(){ 
 
     }
 
