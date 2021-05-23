@@ -1,7 +1,7 @@
 public class Operations {
 
     public long suma(long a, long b){
-        return 0;
+        return a+b;
     }
 
     public long resta(long a, long b){
