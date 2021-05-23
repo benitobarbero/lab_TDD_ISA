@@ -9,12 +9,20 @@ public class MainCalculator {
         Messages.mensajeParaOperar();
 
         int numero = reader.nextInt();
-        ejecutarOperacion(numero);
+
+        while (numero != 6) {
+            ejecutarOperacion(numero);
+            Messages.mensajeParaOperar();
+            numero = reader.nextInt();
+
+        }
+        Messages.despedida();
+
 
     }
 
-    private static void ejecutarOperacion(int numero){
-        switch (numero){
+    private static void ejecutarOperacion(int numero) {
+        switch (numero) {
             case 1:
                 suma();
                 break;
@@ -34,42 +42,47 @@ public class MainCalculator {
 
     }
 
-    private static void suma(){
+    private static void suma() {
         System.out.println("Introduzca un numero para sumar");
         Long num1 = reader.nextLong();
         System.out.println("Introduzca el segundo numero para sumar");
         Long num2 = reader.nextLong();
-        Operations.suma(num1,num2);
+        Long resultado = Operations.suma(num1, num2);
+        Messages.muestraResultado(resultado);
     }
 
-    private static void resta(){
+    private static void resta() {
         System.out.println("Introduzca un numero para restar");
         Long num1 = reader.nextLong();
         System.out.println("Introduzca el segundo numero para restar");
         Long num2 = reader.nextLong();
-        Operations.resta(num1,num2);
+        Long resultado = Operations.resta(num1, num2);
+        Messages.muestraResultado(resultado);
     }
 
-    private static void multiplicacion(){
+    private static void multiplicacion() {
         System.out.println("Introduzca un numero para multiplicar");
         Long num1 = reader.nextLong();
         System.out.println("Introduzca el segundo numero para multiplicar");
         Long num2 = reader.nextLong();
-        Operations.multiplicacion(num1,num2);
+        Long resultado = Operations.multiplicacion(num1, num2);
+        Messages.muestraResultado(resultado);
     }
 
-    private static void division(){
+    private static void division() {
         System.out.println("Introduzca el divisor");
         Long num1 = reader.nextLong();
         System.out.println("Introduzca el numero que desee dividir (Dividendo)");
         Long num2 = reader.nextLong();
-        Operations.division(num1,num2);
+        double resultado = Operations.division(num1, num2);
+        Messages.muestraResultado(resultado);
     }
 
-    private static void raiz(){
+    private static void raiz() {
         System.out.println("Introduzca el numero del que desea saber la raiz cuadrada");
         Long num1 = reader.nextLong();
-        Operations.raiz(num1);
+        double resultado = Operations.raiz(num1);
+        Messages.muestraResultado(resultado);
     }
 
 

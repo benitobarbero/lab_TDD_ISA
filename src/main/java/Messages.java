@@ -20,7 +20,8 @@ public class Messages {
                 "2. Restar \n" +
                 "3. Multiplicar \n" +
                 "4. Dividir \n" +
-                "5. Cálculo de raiz cuadrada");
+                "5. Cálculo de raiz cuadrada\n" +
+                "6. Salir");
     }
 
     public static void muestraResultado(double result){
@@ -31,6 +32,10 @@ public class Messages {
         System.out.println("¿Qué operación desea realizar?");
         listarOperaciones();
         System.out.println("Introduzca un número de operación");
+    }
+
+    public static void despedida(){
+        System.out.println("Muchas gracias por usar la calculadora!");
     }
 
 }
