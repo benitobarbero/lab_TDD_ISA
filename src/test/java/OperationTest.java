@@ -29,15 +29,15 @@ public class OperationTest {
 
     @Test
     public void testDivision(){
-        assertEquals(10, operations.division(2, 20));
-        assertEquals(-2, operations.division(2, -4));
-        assertEquals(50, operations.division(10, 500));
+        assertEquals(new Double(10), operations.division(2, 20));
+        assertEquals(new Double(-2), operations.division(2, -4));
+        assertEquals(new Double(50), operations.division(10, 500));
 
     }
 
     @Test
     public void testRaiz(){
-        assertEquals(3, operations.raiz(2, 9));
+        assertEquals(new Double(3), operations.raiz(2, 9));
 
 
     }

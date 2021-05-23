@@ -13,8 +13,8 @@ public class Operations {
         return a*b;
     }
 
-    public double division(long a, long b){
-        return 0;
+    public double division(long divisor, long dividendo){
+        return dividendo/divisor;
     }
 
     public double raiz(long a, long b){
