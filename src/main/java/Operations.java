@@ -4,8 +4,9 @@ public class Operations {
         return a+b;
     }
 
+
     public long resta(long a, long b){
-        return 0;
+        return a-b;
     }
 
     public long multiplicacion(long a, long b){
