@@ -37,7 +37,7 @@ public class OperationTest {
 
     @Test
     public void testRaiz(){
-        assertEquals(new Double(3), operations.raiz(2, 9));
+        assertEquals(new Double(3), operations.raiz(9));
 
 
     }

@@ -17,9 +17,9 @@ public class Operations {
         return dividendo / divisor;
     }
 
-    public double raiz(long a, long b) {
-        long raizAproximada = calculoRaizAproximada(b);
-        double result = bakhshali(b,raizAproximada);
+    public double raiz(long numCalcularRaiz) {
+        long raizAproximada = calculoRaizAproximada(numCalcularRaiz);
+        double result = bakhshali(numCalcularRaiz,raizAproximada);
         return result;
     }
 
